@@ -16,6 +16,6 @@ public class BaseModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Date createdAt;
-    private Date lastModifiedAt;
+    private Date createdAt;  //auditing attributes
+    private Date lastModifiedAt;  //for keeping records
 }
